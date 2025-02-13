@@ -1,0 +1,59 @@
+h2, h3{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bottomImage {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    width: 73em;
+    height: 60em;
+}
+
+.middleImage
+{
+    position: absolute;
+    left: 23.5em;
+    top: 46.5em;
+    right: 0;
+    z-index: 2;
+    width: 29em;
+    height: 10em;
+}
+
+.topText{
+    position: absolute;
+    left: 38em;
+    top: 1em;
+    z-index: 3;
+}
+
+.time{
+    position: absolute;
+    left: 54.5em;
+    top: 3em;
+    z-index: 3;
+    opacity: 70%;
+}
+
+.rf{
+    position: absolute;
+    left: 22em;
+    top: 44.5em;
+    z-index: 10;
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+}
+
+.nd{
+    position: absolute;
+    left: 20em;
+    top: 49.5em;
+    z-index: 12;
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+}
