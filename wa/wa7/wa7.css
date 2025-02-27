@@ -12,7 +12,7 @@ nav{
     justify-content: space-between;
     background-color: #fffaca;
     font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
-    
+    padding-bottom: 5%;
 }
 nav a{
     width:10vw;
