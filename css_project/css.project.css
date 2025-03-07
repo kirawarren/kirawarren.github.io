@@ -31,151 +31,282 @@ h2{
 }
 
 
-.pictures1{
+.grid1{
     display: grid;
     grid-template-columns: 1fr 0.5fr 1.5fr;
+    /* grid-template-rows: auto; */
     padding-left: 4%;
     padding-top: 3%;
-    z-index: 3;
     align-items: top, center;
     grid-gap: 3%;
+    z-index: 1;
+
 }
-.pictures2{
+.grid1 .container1{
+    height: 30vw;
+    /* background-color: grey; */
+}
+
+.grid1 .container1 .frame1{
+    width: 35vw;
+    z-index: 5;
+}
+
+.grid1 .container1 .sun{
+    align-content: top;
+}
+
+/*  */
+.grid1 .container2{
+    height: 20vw;
+    /* background-color: grey; */
+}
+
+.grid1 .container2 .frame2{
+    width: 20vw;
+    z-index: 5;
+}
+
+.grid1 .container2 .mercury{
+    align-content: top;
+    padding-top: 6%;
+}
+
+.grid1 .container2{
+    height: 20vw;
+    /* background-color: grey; */
+}
+
+.grid1 .container2 .frame2{
+    width: 20vw;
+    z-index: 5;
+}
+
+.grid1 .container2 .mercury{
+    align-content: top;
+    padding-top: 6%;
+}
+
+.grid1 .container3{
+    width: 25vw;
+    height: 45vh;
+    /* background-color: grey; */
+}
+
+.grid1 .container3 .frame3{
+    z-index: 5;
+}
+
+.grid1 .container3 .venus{
+    align-content: top, center;
+}
+
+.grid2{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-left: 3%;
     position: relative;
     top:-7em;
-    width: 62vw;
-    z-index: 4;
+    z-index: 2;
+    width: 50vw;
     grid-gap: 4.8%;
+    padding-top: 6%;
 }
-.pictures3{
+
+/* .grid2 .container4{
+    height: vw;
+} */
+
+.grid2 .container4 .frame4{
+    width: 32vw;
+    z-index: 3;
+}
+
+.grid2 .container4 .earth{
+    align-content: top,center;
+    padding-top: 16%;
+}
+
+.grid2 .container5{
+    height: 40vh;
+    /* background-color: grey; */
+}
+
+.grid2 .container5 .frame5{
+    width: 25vw;
+    z-index: 3;
+}
+
+.grid2 .container5 .mars{
+    align-content: top;
+}
+
+.grid3{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding-left: 2%;
     padding-right: 4%;
     position: relative;
     top: -7em;
-    z-index: 5;
+    z-index: 3;
     grid-gap: 2%;
     align-items: baseline;
+    padding-top: 3%;
 }
-.pictures4{
+
+.grid3 .container6{
+    height: 40vh;
+    /* background-color: grey; */
+}
+
+.grid3 .container6 .frame6{
+    width: 32vw;
+    z-index: 3;
+}
+
+.grid3 .container6 .jupiter{
+    align-content: top, center;
+}
+
+.grid4{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-left: 5%;
     padding-right: 4%;
     position: relative;
     top: -6em;
-    z-index: 6;
+    z-index: 4;
     grid-gap: 3%;
     align-items: center;
+    padding-top: 4%;
 }
 
-
-.pic1{
-    width: 35vw;
-}
-
-.pic2{
+.frame2{
     width: 20vw;
 }
-.pic3{
+.frame3{
     height: 45vw;
 }
-.pic4{
+.frame4{
     width: 35vw;
+    padding-top: 15%;
 }
-.pic5{
+.frame5{
     width: 20vw;
 }
-.pic6{
+.frame6{
     width: 32vw;
 }
-.pic7{
+.frame7{
     width: 27vw;
 }
-.pic8{
+.frame8{
     width: 30vw;
 }
-.pic9{
+.frame9{
     width: 40vw;
 }
-.pic10{
+.frame10{
     width: 40vw;
 }
 
-.gifs{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-left: 4%;
-    padding-top: 3%;
-    z-index: 5;
-    position: absolute;
-    display: inline-block;
-
-}
-.planets1{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-left: 4%;
-    padding-top: 3%;
-    z-index: 5;
-    position: absolute;
-    display: inline-block;
-    z-index: 7;
-}
-.planets2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-left: 3%;
-    position: relative;
-    top:-7em;
-    width: 62vw;
-    z-index: 4;
-    grid-gap: 4.8%;
-}
-.planets3{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-left: 2%;
-    padding-right: 4%;
-    position: relative;
-    top: -7em;
-    z-index: 5;
-    grid-gap: 2%;
-    align-items: baseline;
-}
-.planets4{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-left: 5%;
-    padding-right: 4%;
-    position: relative;
-    top: -6em;
-    z-index: 6;
-    grid-gap: 3%;
-    align-items: center;
-}
 
 .earth{
-    content: url(img/0028.png);
-    padding-top: 13.5%;
-    width: 35vw;
+    content: url(img/[0001-0120]_2.gif);
+    width: 30vw;
+    position:absolute;
     z-index: 6;
+    padding-left: 3%;
 }
 
-.earth:hover{ 
+/* .earth:hover{ 
     content: url(img/[0001-0120]_2.gif);
-}
+} */
 
 .mars{
-    content: url(img/mars-still.png);
-    padding-top: 13.5%;
-    width: 35vw;
+    content: url(img/mars.gif);
+    width: 25vw;
+    position:absolute;
     z-index: 6;
+    padding-top: 15%;
+    /* padding-left: -20%; */
 }
-.mars:hover{
-    content: url();
+
+
+.sun{
+    content: url(img/sun\ copy.gif);
+    width: 35vw;
+    position:absolute;
+    z-index: 6;
+    padding-top: 5%;
 }
+/* .sun:hover{
+    content:url(img/sun\ copy.gif);
+} */
+
+.mercury{
+    content: url(img/mercury\ copy.gif);
+    width: 20vw;
+    position:absolute;
+    z-index: 6;
+    padding-top: 5%;
+}
+
+/* .mercury:hover{ 
+    content: url(img/mercury\ copy.gif);
+} */
+
+.venus{
+    content: url(img/venus.gif);
+    width: 27vw;
+    position:absolute;
+    z-index: 6;
+    padding-top: 15%;
+}
+
+.jupiter{
+    content: url(img/jupiter.gif);
+    width: 27vw;
+    position:absolute;
+    z-index: 6;
+    padding-top: 9%;
+    padding-left: 3%;
+}
+
+.saturn{
+    content: url(img/saturn.gif);
+    width: 21vw;
+    position:absolute;
+    z-index: 6;
+    padding-top: 9%;
+    padding-left: 3%;
+}
+
+.uranus{
+    content: url(img/uranus\ copy.gif);
+    width: 28vw;
+    position:absolute;
+    z-index: 6;
+    padding-top: 10%;
+    padding-left: 1%;
+}
+
+.neptune{
+    content: url(img/neptune\ copy.gif);
+    width: 34vw;
+    position:absolute;
+    z-index: 6;
+    padding-top: 7%;
+    padding-left: 3.5%;
+}
+
+.pluto{
+    content: url(img/pluto.gif); 
+    width: 34vw;
+    position:absolute;
+    z-index: 6;
+    padding-top: 7%;
+    padding-left: 3.5%;
+}
+
+/* andrew 3d modeled all of the planets! */
