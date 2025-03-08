@@ -4,12 +4,12 @@ html{
     background-size: cover ;
 }
 
-h1, h2{
+h1, h2, h3, h4, p{
     color: #F2E19B;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-stretch: expanded;
-    z-index: 4;
+    /* z-index: 4; */
 }
 
 h1{
@@ -19,6 +19,15 @@ h1{
 
 h2{
     font-size: 2.5rem;
+}
+
+h3, h4, p{
+    color: #F2E19B;
+    margin: 5%;
+}
+
+h4, p{
+    text-align: left;
 }
 
 
@@ -48,20 +57,6 @@ h2{
 }
 
 /*  */
-.grid1 .container2{
-    height: 20vw;
-    /* background-color: grey; */
-}
-
-.grid1 .container2 .frame2{
-    width: 20vw;
-    z-index: 5;
-}
-
-.grid1 .container2 .mercury{
-    align-content: top;
-    padding-top: 6%;
-}
 
 .grid1 .container2{
     height: 20vw;
@@ -110,7 +105,7 @@ h2{
 
 .grid2 .container4 .frame4{
     width: 32vw;
-    z-index: 3;
+    /* z-index: 3; */
 }
 
 .grid2 .container4 .earth{
@@ -125,7 +120,7 @@ h2{
 
 .grid2 .container5 .frame5{
     width: 25vw;
-    z-index: 3;
+    /* z-index: 3; */
 }
 
 .grid2 .container5 .mars{
@@ -302,7 +297,7 @@ h2{
     padding-left: 3.5%;
 }
 
-.overlay-outer{
+/* .overlay-outer{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -311,26 +306,268 @@ h2{
     height:70vh;
     align-items: center;
     background-color: red;
-    z-index: 2000;
+    z-index: 30;
     background-color: transparent;
-}
+    pointer-events: none;
+} */
 
 .overlay1{
-    width: 80%;
-    height: 90%;
+    width: 60%;
+    height: 50%;
     margin: auto;
-    background-color: blue;
-    z-index: 2001;
+    background-color: #c8581f;
+    z-index: 32;
     display: none;
     opacity:0%;
+    user-select: none;
+    position:fixed;
+    top:60%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    border-radius: 25px;
 }
 
 
 .container1:hover .overlay1{
     display: block;
     opacity:100%;
-    transition: opactiy 2s;
+    transition: 5s;
+    overflow-y: hidden;
+    position: fixed
+
 }
 /* andrew 3d modeled all of the planets! */
+.overlay2{
+    width: 60%;
+    height: 50%;
+    margin: auto;
+    background-color: #5b5c5b;
+    z-index: 32;
+    display: none;
+    opacity:0%;
+    user-select: none;
+    border-radius: 25px;
+    position:fixed;
+    top:60%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+
+.container2:hover .overlay2{
+    display: block;
+    opacity:100%;
+    transition: opactiy 2s;
+    overflow-y: hidden;
+    position: fixed
+
+}
+
+.overlay3{
+    width: 60%;
+    height: 50%;
+    margin: auto;
+    background-color: #726149;
+    z-index: 32;
+    display: none;
+    opacity:0%;
+    user-select: none;
+    border-radius: 25px;
+    position:fixed;
+    top:60%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+
+.container3:hover .overlay3{
+    display: block;
+    opacity:100%;
+    transition: opactiy 2s;
+    overflow-y: hidden;
+    position: fixed;
+}
+
+.overlay4{
+    width: 60%;
+    height: 50%;
+    background-color: #394513;
+    z-index: 200000;
+    display: none;
+    opacity:0%;
+    user-select: none;
+    border-radius: 25px;
+    justify-content: center;
+    align-content: center;
+    position:fixed;
+    top:60%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.container4:hover .overlay4{
+    display: block;
+    opacity:100%;
+    transition: opactiy 2s;
+    overflow-y: hidden;
+    position: fixed;
+    z-index: 200000;
+}
+
+.overlay5{
+    width: 60%;
+    height: 50%;
+    background-color: #4b332d;
+    z-index: 33;
+    display: none;
+    opacity:0%;
+    user-select: none;
+    border-radius: 25px;
+    justify-content: center;
+    align-content: center;
+    position:fixed;
+    top:60%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.container5:hover .overlay5{
+    display: block;
+    opacity:100%;
+    transition: opactiy 2s;
+    overflow-y: hidden;
+    position: fixed;
+}
+
+.overlay6{
+    width: 60%;
+    height: 50%;
+    background-color: #683913;
+    z-index: -1;
+    display: none;
+    opacity:0%;
+    user-select: none;
+    border-radius: 25px;
+    justify-content: center;
+    align-content: center;
+    position:fixed;
+    top:60%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.container6:hover .overlay6{
+    display: block;
+    opacity:100%;
+    transition: opactiy 2s;
+    overflow-y: hidden;
+    position: fixed;
+    z-index: 33;
+}
+
+
+.overlay7{
+    width: 60%;
+    height: 50%;
+    background-color: #5e502f;
+    z-index: 33;
+    display: none;
+    opacity:0%;
+    user-select: none;
+    border-radius: 25px;
+    justify-content: center;
+    align-content: center;
+    position:fixed;
+    top:60%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.container7:hover .overlay7{
+    display: block;
+    opacity:100%;
+    transition: opactiy 2s;
+    overflow-y: hidden;
+    position: fixed;
+}
+
+.overlay8{
+    width: 60%;
+    height: 50%;
+    background-color: #5c6263;
+    z-index: 33;
+    display: none;
+    opacity:0%;
+    user-select: none;
+    border-radius: 25px;
+    justify-content: center;
+    align-content: center;
+    position:fixed;
+    top:60%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.container8:hover .overlay8{
+    display: block;
+    opacity:100%;
+    transition: opactiy 2s;
+    overflow-y: hidden;
+    position: fixed;
+}
+
+.overlay9{
+    width: 60%;
+    height: 50%;
+    background-color: #273a7b;
+    z-index: 33;
+    display: none;
+    opacity:0%;
+    user-select: none;
+    border-radius: 25px;
+    justify-content: center;
+    align-content: center;
+    position:fixed;
+    top:60%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.container9:hover .overlay9{
+    display: block;
+    opacity:100%;
+    transition: opactiy 2s;
+    overflow-y: hidden;
+    position: fixed;
+}
+
+.overlay10{
+    width: 60%;
+    height: 50%;
+    background-color: #140801;
+    z-index: 33;
+    display: none;
+    opacity:0%;
+    user-select: none;
+    border-radius: 25px;
+    justify-content: center;
+    align-content: center;
+    position:fixed;
+    top:60%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.container10:hover .overlay10{
+    display: block;
+    opacity:100%;
+    transition: opactiy 2s;
+    overflow-y: hidden;
+    position: fixed;
+}
+
+
+
+
 
 
