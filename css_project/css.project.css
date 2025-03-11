@@ -567,7 +567,37 @@ h4, p{
 }
 
 
+@media screen and (width<= 600px) {
+    .grid1, .grid3 {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 80vw;
+        align-items: center;
+    }
 
+    .grid2, .grid4{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+        align-items: center;
+    }
+
+
+    h1{
+        text-size-adjust: 13em;
+    }
+
+    .container1 .container2 .container3 .container4 .container5 .container6 .container7 .container8 .container9 .container10{
+        width: 100%;
+        padding: 10px;
+    }
+    /* html {
+        background-image: none; /* Remove background image */
+        background-color: blue; /* Apply background color */
+    } */
+}
 
 
 
