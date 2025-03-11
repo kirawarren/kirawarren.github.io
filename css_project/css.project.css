@@ -567,37 +567,69 @@ h4, p{
 }
 
 
-@media screen and (width<= 600px) {
+@media screen and (max-width: 600px) {
     .grid1, .grid3 {
         display: grid;
         grid-template-columns: none;
-        grid-template-rows: 1fr 1fr 1fr;
-        width: 80vw;
-        align-items: center;
+        grid-template-rows:  30vh 30vh 30vh;
+        justify-content: center;        
     }
 
     .grid2, .grid4{
         display: grid;
         grid-template-columns: none;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 30vh 30vh;
         width: 100%;
-        align-items: center;
+        justify-content: center;
+    }
+
+    .grid2{
+        padding-top: 30vh;
     }
 
 
     h1{
-        text-size-adjust: 13em;
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 0.5em;
     }
 
-    .container1 .container2 .container3 .container4 .container5 .container6 .container7 .container8 .container9 .container10{
-        width: 100%;
-        padding: 10px;
-    }
-    /* html {
-        background-image: none; /* Remove background image */
-        background-color: blue; /* Apply background color */
-    } */
-}
+  .container2{
+    margin-top: -15vh;
+  }
+  .container3{
+    margin-top: -30vh;
+  }
 
+  .container4{
+    margin-top: -45vh;
+  }
 
+  .earth{
+    margin-top: -3.5vh;
+  }
 
+  .container5{
+    margin-top: -55vh;
+  }
+  .mars{
+    margin-top: -3.5vh;
+  }
+  .container6{
+    margin-top: -60vh;
+  }
+  .container7{
+    margin-top: -70vh;
+  }
+  .container8{
+    margin-top: -80vh;
+  }
+  .container9{
+    margin-top: -185vh;
+  }
+  .container10{
+    margin-top: -200vh;
+  }
+
+} 
