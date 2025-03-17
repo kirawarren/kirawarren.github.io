@@ -666,3 +666,19 @@ h3{
     align-content: center;
 }
 
+
+.footer {
+    left: 0;
+    bottom: 0;
+    padding-top: 2%;    
+    padding-bottom: 2%;
+    width: 100%;
+    background-color: #08192E;
+    color: #F2E19B;
+    text-align: center;
+  }
+
+  a:link, a:visited{
+    color: #F2E19B;
+  }
+
