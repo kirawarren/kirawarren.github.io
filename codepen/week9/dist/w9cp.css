@@ -38,8 +38,8 @@ to take effect, as the specificity is the same */
   }
 }
 [popover] {
-  width: 50vw;
-  height: 50vh;
+  width: 20vw;
+  height: 20vh;
   display: grid;
   font-size: 1.2rem;
   padding: 1rem;
