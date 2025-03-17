@@ -4,20 +4,29 @@ html{
     background-size: cover ;
 }
 
+.abril-fatface-regular {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 h1, h2, h3, h4, p{
     color: #F2E19B;
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Abril Fatface;
     font-stretch: expanded;
     /* z-index: 4; */
 }
 
 h1{
+    font-family: Abril Fatface;
     padding-top: 3vh;
     font-size: 4rem;
+    font-weight: bold;
 }
 
 h2{
+    font-family: Abril Fatface;
     font-size: 2.5rem;
 }
 
@@ -30,6 +39,9 @@ h4, p{
     text-align: left;
 }
 
+h3{
+    font-size: 2rem;
+}
 
 .grid1{
     display: grid;
@@ -312,8 +324,8 @@ h4, p{
 } */
 
 .overlay1{
-    width: 60%;
-    height: 50%;
+    width: 70%;
+    height: 55%;
     margin: auto;
     background-color: #c8581f;
     z-index: 32;
@@ -333,13 +345,23 @@ h4, p{
     opacity:100%;
     transition: 5s;
     overflow-y: hidden;
-    position: fixed
+    position: fixed;
+}
 
+.grid2:hover{
+    z-index: 3000;
+}
+
+.grid3:hover{
+    z-index: 3000;
+}
+.grid4:hover{
+    z-index: 3000;
 }
 /* andrew 3d modeled all of the planets! */
 .overlay2{
-    width: 60%;
-    height: 50%;
+    width: 70%;
+    height: 55%;
     margin: auto;
     background-color: #5b5c5b;
     z-index: 32;
@@ -359,13 +381,15 @@ h4, p{
     opacity:100%;
     transition: opactiy 2s;
     overflow-y: hidden;
-    position: fixed
+    position: fixed;
+    z-index: 1000;
+
 
 }
 
 .overlay3{
-    width: 60%;
-    height: 50%;
+    width: 70%;
+    height: 55%;
     margin: auto;
     background-color: #726149;
     z-index: 32;
@@ -386,11 +410,13 @@ h4, p{
     transition: opactiy 2s;
     overflow-y: hidden;
     position: fixed;
+    z-index: 1000;
+
 }
 
 .overlay4{
-    width: 60%;
-    height: 50%;
+    width: 70%;
+    height: 55%;
     background-color: #394513;
     z-index: 200000;
     display: none;
@@ -415,8 +441,8 @@ h4, p{
 }
 
 .overlay5{
-    width: 60%;
-    height: 50%;
+    width: 70%;
+    height: 55%;
     background-color: #4b332d;
     z-index: 33;
     display: none;
@@ -440,8 +466,8 @@ h4, p{
 }
 
 .overlay6{
-    width: 60%;
-    height: 50%;
+    width: 70%;
+    height: 55%;
     background-color: #683913;
     z-index: -1;
     display: none;
@@ -467,8 +493,8 @@ h4, p{
 
 
 .overlay7{
-    width: 60%;
-    height: 50%;
+    width: 70%;
+    height: 55%;
     background-color: #5e502f;
     z-index: 33;
     display: none;
@@ -492,8 +518,8 @@ h4, p{
 }
 
 .overlay8{
-    width: 60%;
-    height: 50%;
+    width: 70%;
+    height: 55%;
     background-color: #5c6263;
     z-index: 33;
     display: none;
@@ -517,8 +543,8 @@ h4, p{
 }
 
 .overlay9{
-    width: 60%;
-    height: 50%;
+    width: 70%;
+    height: 55%;
     background-color: #273a7b;
     z-index: 33;
     display: none;
@@ -542,8 +568,8 @@ h4, p{
 }
 
 .overlay10{
-    width: 60%;
-    height: 50%;
+    width: 70%;
+    height: 55%;
     background-color: #140801;
     z-index: 33;
     display: none;
@@ -632,4 +658,13 @@ h4, p{
     margin-top: -200vh;
   }
 
-} 
+}
+
+h9{
+    color: #F2E19B;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.7rem;
+    align-content: center;
+}
+
