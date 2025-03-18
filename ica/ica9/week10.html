@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js intro</title>
+    <style>
+     .box{
+        width: 300px;
+        height: 400px;
+        margin: 10px;
+        background-color: pink;
+     }
+     button{
+        width: 300px;
+     }
+    </style>
+</head>
+<body>
+    <h1> yippee!!</h1>
+    <button> add some text! </button>
+    <p class="text"></p>
+    <div class="box"></div>
+  
+    
+    <script>
+        let box = document.querySelector('.box');
+        box.addEventListener('click', changeColor);
+
+        function changeColor(){
+            box.style = "width: 600px; height: 700px; background-color: purple";
+        }
+        
+    
+        let btn = document.querySelector('button');
+
+        btn.addEventListener('click', addText)
+        function addText(){
+            let text = document.querySelector('.text');
+            const input = prompt('enter some text');
+            text.textContent = text.textContent + " " + input;
+            btn.textContent = "add MORE text!";
+        }
+
+    </script> 
+</body>
+</html>
