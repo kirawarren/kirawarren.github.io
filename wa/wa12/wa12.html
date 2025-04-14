@@ -26,14 +26,13 @@
       </div>
       <script>
         var newBtn = document.querySelector('#js-new-quote').addEventListener('click', getQuote);
-        var answerBtn = document.querySelector('#js-tweet').addEventListener('click', displayAnswer);
+        // var answerBtn = document.querySelector('#js-tweet').addEventListener('click', displayAnswer);
         
 
-        var endpoint = "https://api.api-ninjas.com/v1/quotes";
+        var endpoint = "https://api.api-ninjas.com/v1/advice";
 
         let current = {
-            quote: "",
-            author: ""
+            advice: "",
         };
 
         async function getQuote() {
@@ -46,8 +45,7 @@
                 });
 
                 const json = await response.json();
-                displayQuote(json[0].quote);
-                current.author = json[0].author;
+                displayQuote(json[0].advice);
 
                 
             }catch(err){
@@ -63,10 +61,10 @@
             quoteText.textContent = quote;
         }
 
-        function displayAnswer(answer){
-            const answerText = document.querySelector('#js-answer-text');
-            answerText.textContent = current.author;
-        }
+        // function displayAnswer(answer){
+        //     const answerText = document.querySelector('#js-answer-text');
+        //     answerText.textContent = current.author;
+        // }
 
       </script>
 </body>
