@@ -1,4 +1,5 @@
 const input = document.getElementById('phone');
+input.className = "enter";
 
 const remap = {
 '0': '8',
@@ -20,6 +21,10 @@ if (e.key >= '0' && e.key <= '9') {
 
     const wrongDigit = remap[e.key];
     input.value += wrongDigit;
+}
+
+if(e.key == '0'){
+    
 }
 
 log.console(input.value);
